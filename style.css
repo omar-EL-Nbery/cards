@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p{
+    font-size: 15px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.card{
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 320px;
+    margin: auto;
+
+}
+.card .title {
+    font-family: 'Big Shoulders Display', sans-serif;
+   font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.card p {
+    line-height: 2rem;
+}
+
+.card .button{
+    background-color: white;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.card:nth-child(1){
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0;
+}
+
+.card:nth-child(1) .button {
+  color: hsl(31, 77%, 52%)
+}
+
+
+
+.card:nth-child(2){
+    background-color:  hsl(184, 100%, 22%);
+}
+
+.card:nth-child(2) .button{
+    color: hsl(184, 100%, 22%);;
+}
+
+.card:nth-child(3){
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px;
+}
+
+.card:nth-child(3) .button{
+    color:  hsl(179, 100%, 13%);;
+}
+
+
+@media (min-width : 760px) {
+    .col{
+        width: 33.3333%;
+    }
+    main{
+        display: flex;
+        max-width: 960px;
+        justify-content: center;
+    }
+
+    .card{
+        width: 1005;
+    }
+
+ 
+
+    .card:nth-child(1){
+       
+        border-radius: 10px 0px 0 10px;
+    }
+
+    .card:nth-child(3){
+        border-radius: 0 10px 10px 0;
+    }
+}
